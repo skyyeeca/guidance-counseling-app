@@ -888,7 +888,7 @@ class _AppointmentModuleState extends State<AppointmentModule> {
               _infoRow(Icons.email, "Email", ap['email']?.toString()),
               _infoRow(Icons.phone, "Contact", ap['contact']?.toString()),
               _infoRow(Icons.calendar_month, "Appt. Date", "${ap['date']} | ${ap['time']}"),
-              _infoRow(Icons.qr_code, "Ref Code", ap['ref_code']?.toString()?.toUpperCase() ?? "N/A"),
+              _infoRow(Icons.qr_code, "Ref Code", ap['ref_code']?.toString().toUpperCase() ?? "N/A"),
               const Divider(height: 20),
               const Text("REASON", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 11, color: Colors.grey)),
               Text(ap['reason']?.toString() ?? "No reason provided.", style: const TextStyle(fontStyle: FontStyle.italic)),
